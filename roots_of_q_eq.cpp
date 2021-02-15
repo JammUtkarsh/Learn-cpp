@@ -1,5 +1,4 @@
-#include<iostream>
-#include<cmath>
+#include<iostream>1
 
 using namespace std;
 
