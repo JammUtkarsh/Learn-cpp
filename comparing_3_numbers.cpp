@@ -4,37 +4,36 @@ using namespace std;
 
 int main()
 {
-	int x[3];
+	int x,y,z;
 
 	cout<<"Enter 3 numbers\n";
-	cin>>x[0]>>x[1]>>x[2];
+	cin>>x>>y>>z;
 	cout<<"\n";
-	
-	if(x[0]<x[1] && x[0]<<x[2])
-	{
-		cout<<x[0]<<" is the smallest\n";
-		if(x[1]<x[2])
-		{
-			cout<<x[2]<<" is the largest\n";
-		}
-		else
-		{
-			cout<<x[1]<<" is the largest\n";
-		}
 
-	}
-	else
+	if (x<y && x<z)
 	{
-		cout<<x[0]<<" is the largest\n";
-		if(x[1]<x[2])
-		{
-			cout<<x[1]<<" is the smallest\n";
-		}
-		else
-		{
-			cout<<x[2]<<" is the smallest\n";
-		}
+		cout<<x<<" is the smallest number";
 	}
-	
+	else if(y<x && y<z)
+		{
+			cout<<y<<" is the smallest number";
+		}
+		else if(z<x && z<y)
+			{
+				cout<<z<<" is the smallest number";
+			}
+	cout<<"\n";
+	if(x>y && x>z)
+	{
+		cout<<x<<" is the largest number";
+	}
+	else if(y>x && y>z)
+		{
+			cout<<y<<" is the largest number";
+		}
+		else if(z>x && z>y)
+			{
+				cout<<z<<" is the largest number";
+			}
 	return 0;
 }
