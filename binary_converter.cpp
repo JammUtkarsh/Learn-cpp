@@ -7,15 +7,12 @@ int main()
 	int n, m;
 	cout << "Enter the number ";
 	cin >> n;
-	m=n;
-	do
+	while(n>0)
 	{
-		n/=2;
-		m%=2;
+		m=n%2;
+		n=n/2;
 		cout<<m;
-		m=n;
-	} while (n==1);
-	
+	}
 	cout<<endl;
 	return 0;
 }
