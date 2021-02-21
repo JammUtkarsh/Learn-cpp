@@ -20,7 +20,8 @@ int main()
 			int found=i;
 			found++;
 			cout<<"The number is on "<<found<<" number of list\n";
-		}
+		}break;
 	}
+	cout<<"The number is not in the list";
 	return 0;
 }
