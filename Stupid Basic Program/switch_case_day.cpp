@@ -3,7 +3,7 @@
 using namespace std;
 
 int main()
-{1
+{
 	int day;
 	cout<<"Enter day no. of week ";
 	cin>>day;
