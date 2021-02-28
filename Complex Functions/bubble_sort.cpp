@@ -2,14 +2,6 @@
 
 using namespace std;
 
-void swap(int *a, int *b)
-{
-	int temp;
-	temp=*a;
-	*a=*b;
-	*b=temp;
-}
-
 int main()
 {
     int a[5];
@@ -17,11 +9,21 @@ int main()
     {
         cin>>a[i];
     }
+
     cout<<endl<<endl;
-    int i=0;
-    while(a[i]>a[i+1])
+
+    for(int i=0; i<5-1; i++)
     {
-        swap(a[i], a[i+1]);
+        for ( i=0; i <5-2; i++)
+        {
+            if (a[i]>a[i+1])
+            {
+                int temp;
+	            temp=a[i];
+	            a[i]=a[i+1];
+	            a[i+1]=temp;
+            }
+        }
     }
     for(int i=0; i<5; i++)
     {
