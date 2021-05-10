@@ -11,7 +11,7 @@ class itemrecord
     public:
     void initcounter(){ counter = 0;}
     void order_check();
-    void display_order();
+    void displayOrder();
 };
 void itemrecord :: order_check(){
     cout<<"Enter Order ID ";
@@ -21,11 +21,11 @@ void itemrecord :: order_check(){
     counter ++;
 }
 
-void itemrecord :: display_order(){
+void itemrecord :: displayOrder(){
     
     for (int i = 0; i < counter; i++)
     {
-        cout<<"The price of your Order ID "<<orderID[counter]<<" is "<<orderPrice[counter]<<endl;
+        cout<<"The price of your Order ID "<<orderID[i]<<" is "<<orderPrice[i]<<endl;
     }
     
     
@@ -34,7 +34,6 @@ int main(){
     itemrecord one;
     one.initcounter();
     one.order_check();
-    one.order_check();
-    one.display_order();
+    one.displayOrder();
     return 0;
 }
