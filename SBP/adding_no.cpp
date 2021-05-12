@@ -13,3 +13,6 @@ int main()
 	cout<<add(11,23,45)<<endl;
 	return 0;
 }
+/*
+Using default argument values.
+*/

@@ -1,14 +1,10 @@
-#include<iostream>
-
+#include <iostream>
 using namespace std;
-
+  
 int main()
 {
-	int A[4]={1,2,3,4};
-
-	for(auto x:A)
-	{
-		cout<<x<<endl;
-	}
-	return 0;
+    int arr[] = { 10, 20, 30, 40 };
+	
+    for (int x : arr)
+        cout << x << endl;
 }
