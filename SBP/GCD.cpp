@@ -5,7 +5,7 @@ using namespace std;
 int main()
 {
 	int m,n;
-	cout<<"Enter two number ";
+	cout<<"Enter two number "; // Greatest common divisor.
 	cin>>n>>m;
 
 	while(m!=n)
