@@ -20,7 +20,7 @@ public:
 		mathMark = m;
 	}
 	int total();
-	void grade();
+	char grade();
 };
 
 int student :: total()
@@ -28,15 +28,15 @@ int student :: total()
 	return phyMark + chemMark + mathMark;
 }
 
-void student :: grade()
+char student :: grade()
 {
 	int average = total()/3;
 	if (average>60)
-		cout<<"A";
+		return 'A';
 	else if (average<60 && average>30)
-		cout<<"B";
+		return 'B';
 	else
-		cout<<"C";
+		return 'C';
 }
 
 int main()
@@ -54,8 +54,7 @@ int main()
 	student rohan(rollnumber, name, p, c, m);
 	cout<<endl;
 	cout<<"Total Makrs : "<<rohan.total()<<endl;
-	cout<<"Grade : ";
-	rohan.grade();
+	cout<<"Grade : "<<rohan.grade();
 
 	return 0;
 }
