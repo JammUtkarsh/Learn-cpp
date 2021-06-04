@@ -15,7 +15,7 @@ public:
 	Shop(){}
 	Shop(string n, int c, float p);
 	friend ofstream &operator<<(ofstream &fos, Shop &o);
-	friend ifstream &operator<<(ifstream &fis, Shop &i);
+	friend ifstream &operator>>(ifstream &fis, Shop &i);
 	friend ostream &operator<<(ostream &os, Shop &i);
 };
 
@@ -31,7 +31,7 @@ ofstream & operator<<(ofstream &fos, Shop &o)
 	return fos;
 }
 
-ifstream & operator<<(ifstream &fis, Shop &i)
+ifstream & operator>>(ifstream &fis, Shop &i)
 {
 	fis>>i.p_name>>i.p_count>>i.p_price;
 	return fis;
@@ -73,7 +73,7 @@ int main()
 	ifstream import1("shop_item.txt");
 	for (int i = 0; i < n; i++)
 	{
-		import1<<item;
+		import1>>item;
 		cout<<"Item : "<<i + 1<<endl<<item<<endl;
 	}
 	return 0;
